@@ -20,7 +20,7 @@ int main(){
 int division(int decimal){
     int residuo = 0;
     int memoria = 1;
-    int contador = 0;
+    int binario = 0;
 
     while (decimal > 1){
         residuo = decimal % 2;
@@ -34,13 +34,17 @@ int division(int decimal){
         }
         cout << "Memoria: " << memoria << endl; 
     }
+
     if (decimal > 0)
     {
         memoria = (memoria * 10) + 1;
     }else{
         memoria = 0;
     }
-    
-    
-    return memoria;
+
+    while (memoria >1){
+        binario = memoria % 10;
+        memoria = memoria / 10;
+    }
+    return binario;
 }
