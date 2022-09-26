@@ -7,11 +7,11 @@ int main(){
     int contador = 0;
     system("Pause");
     while (true){
-        Sleep(100);
+        Sleep(50);
         cout << "Ciclo " << contador << endl;
         contador++;
         if(contador%100==0)
-            cout << '\a';
+            Beep(1000,100);
     }
     return 0;
 };
