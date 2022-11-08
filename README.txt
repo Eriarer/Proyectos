@@ -1,0 +1,1 @@
+This is just a little open repository to little new projects for a new students :D
